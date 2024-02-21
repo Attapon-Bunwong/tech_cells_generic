@@ -20,13 +20,13 @@
 set SCRIPT_ROOT [file normalize [file dirname [info script]]]
 
 # check if the enviroment variables are set, if not, set default to genesys2
-if {![info exists ::env(XILINX_PART)]} {
-	puts "Set default XILINX_PART"
-	set env(XILINX_PART) "xc7k325tffg900-2"
-}
+# if {![info exists ::env(XILINX_PART)]} {
+# 	puts "Set default XILINX_PART"
+# 	set env(XILINX_PART) "xc7k325tffg900-2"
+# }
 if {![info exists ::env(XILINX_BOARD)]} {
 	puts "Set default XILINX_BOARD"
-	set env(XILINX_BOARD) "digilentinc.com:genesys2:part0:1.1"
+	set env(XILINX_BOARD) "xilinx.com:au250:part0:1.3"
 }
 
 ####################################################################################################
@@ -35,8 +35,10 @@ if {![info exists ::env(XILINX_BOARD)]} {
 
 set project tc_generic_sim
 
-create_project $project . -force -part $::env(XILINX_PART)
+create_project $project . -force
+# create_project $project . -force -part $::env(XILINX_PART)
 set_property board_part $::env(XILINX_BOARD) [current_project]
+
 
 # set number of threads
 set_param general.maxThreads 8

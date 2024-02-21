@@ -1,0 +1,8 @@
+0.7
+2020.2
+Nov 18 2020
+09:20:35
+/home/attapon/Persimmons/tech_cells_generic/.bender/git/checkouts/common_verification-5e20f8334eb127cc/src/clk_rst_gen.sv,1708445306,systemVerilog,,/home/attapon/Persimmons/tech_cells_generic/src/fpga/tc_sram_xilinx.sv,,clk_rst_gen,,uvm,,TARGET_FPGA=;TARGET_SIMULATION=;TARGET_TEST=;TARGET_VIVADO=;TARGET_XILINX=,,,,
+/home/attapon/Persimmons/tech_cells_generic/src/fpga/tc_sram_xilinx.sv,1708445212,systemVerilog,,/home/attapon/Persimmons/tech_cells_generic/test/tb_tc_sram.sv,,tc_sram,,uvm,,TARGET_FPGA=;TARGET_SIMULATION=;TARGET_TEST=;TARGET_VIVADO=;TARGET_XILINX=,,,,
+/home/attapon/Persimmons/tech_cells_generic/tc_generic_sim.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+/home/attapon/Persimmons/tech_cells_generic/test/tb_tc_sram.sv,1708445212,systemVerilog,,,,tb_tc_sram,,uvm,,TARGET_FPGA=;TARGET_SIMULATION=;TARGET_TEST=;TARGET_VIVADO=;TARGET_XILINX=,,,,

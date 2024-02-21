@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  -d "TARGET_FPGA=" -d "TARGET_SIMULATION=" -d "TARGET_TEST=" -d "TARGET_VIVADO=" -d "TARGET_XILINX=" \
+"../../../../.bender/git/checkouts/common_verification-5e20f8334eb127cc/src/clk_rst_gen.sv" \
+"../../../../src/fpga/tc_sram_xilinx.sv" \
+"../../../../test/tb_tc_sram.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
